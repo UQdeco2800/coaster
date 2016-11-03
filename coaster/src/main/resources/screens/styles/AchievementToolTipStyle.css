@@ -1,0 +1,21 @@
+HBox{
+	-fx-background-color: rgb(153, 173, 153);
+	-fx-pref-width: 650;
+	-fx-pref-height: 250;
+}
+
+VBox{
+	-fx-spacing: 50;
+	-fx-pref-width: 400;
+	-fx-pref-height: 250;
+	-fx-padding: 50;
+}
+
+Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 14px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-max-width: infinity;
+}

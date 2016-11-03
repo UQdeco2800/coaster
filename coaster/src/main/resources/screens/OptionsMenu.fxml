@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="mainContainer" stylesheets="@./styles/OptionsMenuStyle.css"
+      xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="uq.deco2800.coaster.graphics.screens.controllers.OptionsMenuController">
+<children>
+      <Label id="header" text="OPTIONS" />
+      <CheckBox fx:id="muteCheckBox" text="MUTE" />
+      <Label text="MASTER VOLUME" />
+      <Slider fx:id="masterSlider" showTickLabels="true" showTickMarks="true"/>
+      <CheckBox fx:id="lightingCheckBox" text="LIGHTING" />
+      <Label text="Entity Render Distance" />
+      <Slider fx:id="renderSlider" showTickLabels="true" showTickMarks="true" max="500.0" min="100.0"/>
+      <Button mnemonicParsing="false" onAction="#onControlsButtonClick" text="CONTROLS" />
+      <Button mnemonicParsing="false" onAction="#onBackButtonClick" text="BACK" />
+   </children>
+</VBox>

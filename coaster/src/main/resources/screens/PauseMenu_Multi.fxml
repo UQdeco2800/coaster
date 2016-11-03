@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="mainContainer" minHeight="456.0" prefHeight="456.0" prefWidth="512.0" stylesheets="@styles/PauseMenuStyle.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.PauseMenuController">
+    <children>
+        <Label text="PAUSED" />
+        <Button mnemonicParsing="false" onAction="#onResumeButtonClick" text="RESUME" />
+        <Button mnemonicParsing="false" onAction="#onAchievementsButtonClick" text="DISCONNECT" />
+        <Button mnemonicParsing="false" onAction="#onOptionsButtonClick" text="OPTIONS" />
+        <Button mnemonicParsing="false" onAction="#onQuitButtonClick" text="QUIT" />
+      <TextField alignment="CENTER" opacity="0.7" text="MULTIPLAYER PAUSE MENU">
+         <VBox.margin>
+            <Insets top="150.0" />
+         </VBox.margin>
+      </TextField>
+    </children>
+</VBox>

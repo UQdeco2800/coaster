@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<ScrollPane prefHeight="619.0" prefWidth="620.0" stylesheets="@styles/inGameTutorialStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.InGameTutorialScreenController">
+   <content>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="535.0" minWidth="-Infinity" prefHeight="618.0" prefWidth="538.0">
+      	<children>
+            <Label text="HOW TO PLAY" />
+            <Button mnemonicParsing="false" onAction="#onWeaponButtonClick" text="WEAPONS" />
+            <Button mnemonicParsing="false" onAction="#onPowerUpButtonClick" text="POWERUPS" />
+            <Button mnemonicParsing="false" onAction="#onCommerceButtonClick" text="COMMERCE" />
+            <Button layoutX="26.0" layoutY="381.0" mnemonicParsing="false" onAction="#onSkillsButtonClick" text="SKILLS" />
+            <BorderPane prefHeight="50.0" prefWidth="455.0">
+               <left>
+                  <Button mnemonicParsing="false" onAction="#onBackButtonClick" text="BACK" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

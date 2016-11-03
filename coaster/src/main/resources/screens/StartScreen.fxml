@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane fx:id= "startContainer" stylesheets="@./styles/GenericStyle.css"
+            xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="uq.deco2800.coaster.graphics.screens.controllers.StartScreenController">
+<StackPane fx:id="startScreenPane" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+           AnchorPane.rightAnchor="0.0" styleClass="solidPane">
+    <children>
+        <Pane id="background"/>
+        <VBox alignment="TOP_CENTER">
+            <children>
+                <ImageView id="logoImage" fx:id="logoImage"
+                           preserveRatio="false">
+                </ImageView>
+                <Button id="startButton" fx:id="startButton" alignment="CENTER" mnemonicParsing="false"
+                        onAction="#startButtonAction"  text="START"
+                        textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="20.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button id="loadButton" fx:id="loadButton" alignment="CENTER" disable="false" mnemonicParsing="false"
+                        onAction="#loadButtonAction"
+                          text="LOAD"
+                        textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button id="optionsButton" fx:id="optionsButton" alignment="CENTER" layoutX="10.0" layoutY="400.0"
+                         mnemonicParsing="false" onAction="#optionsButtonAction"
+                         text="OPTIONS" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button id="achievementsButton" fx:id="achievementsButton" alignment="CENTER" layoutX="10.0"
+                        layoutY="120.0" mnemonicParsing="false" onAction="#achievementsButtonAction"
+                        text="ACHIEVEMENTS" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button id="leaderboardButton" fx:id="leaderboardButton" alignment="CENTER" layoutX="10.0"
+                        layoutY="120.0" mnemonicParsing="false" onAction="#leaderboardButtonAction"
+                        text="LEADERBOARD" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button id="aboutButton" fx:id="aboutButton" alignment="CENTER" layoutX="10.0" layoutY="120.0"
+                        mnemonicParsing="false" onAction="#aboutButtonAction"
+                        text="ABOUT" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets bottom="10.0"/>
+                    </VBox.margin>
+                </Button>
+                <Button id="quitButton" fx:id="quitButton" alignment="CENTER" layoutX="10.0" layoutY="206.0"
+                        mnemonicParsing="false" onAction="#quitButtonAction"
+                         text="QUIT" textAlignment="CENTER">
+                </Button>
+            </children>
+            <HBox.margin>
+                <Insets top="20.0"/>
+            </HBox.margin>
+        </VBox>
+    </children>
+</StackPane>
+</AnchorPane>

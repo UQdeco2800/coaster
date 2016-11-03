@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+
+<AnchorPane fx:id="startContainer" styleClass="solidPane" stylesheets="@./styles/GenericStyle.css" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.MultiScreenController">
+<StackPane fx:id="multiScreen" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <children>
+        <Pane id="background" />
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+
+                <Pane prefHeight="200.0" prefWidth="200.0" />
+                <Pane prefHeight="200.0" prefWidth="300.0">
+                    <children>
+                        <Button id="backButton" fx:id="backButton" layoutX="14.0" layoutY="14.0" maxWidth="100.0" mnemonicParsing="false" onAction="#backButtonAction" prefHeight="20.0" prefWidth="100.0" text="BACK" textAlignment="CENTER">
+                        </Button>
+                    </children>
+                </Pane>
+                <VBox prefHeight="319.0" prefWidth="900.0">
+                    <children>
+                        <Label id="aboutTitle" fx:id="multiTitle" alignment="CENTER" maxWidth="900.0" prefHeight="39.0"
+                               prefWidth="900.0" text="MULTIPLAYER" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="30.0" top="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                      <TextArea fx:id="name" prefHeight="23.0" prefWidth="795.0" promptText="Enter Player Name" />
+                        <HBox alignment="CENTER">
+                        <Button fx:id="hostButton" text="HOST" onAction="#onHostButton" alignment="CENTER_LEFT">
+                            <HBox.margin>
+                                <Insets right="40"/>
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="joinButton" text="JOIN" onAction="#onJoinButton" alignment="CENTER_RIGHT">
+                            <HBox.margin>
+                                <Insets left="40"/>
+                            </HBox.margin>
+                            </Button>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets top="60.0" />
+                    </HBox.margin>
+                </VBox>
+                <Pane prefHeight="200.0" prefWidth="300.0" />
+            </children>
+        </HBox>
+    </children>
+</StackPane>
+</AnchorPane>

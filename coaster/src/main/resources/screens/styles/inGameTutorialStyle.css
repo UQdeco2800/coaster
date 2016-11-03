@@ -1,0 +1,76 @@
+ScrollPane{
+	-fx-background-color: transparent;
+	-fx-border-color: #FFFFFFFF;
+
+}
+
+.TransScrollPane > .viewport {
+	-fx-background-color: rgba(0, 0, 0, .7);
+	
+}
+
+VBox{
+	-fx-background-color: rgba(0, 0, 0, .7);
+	-fx-border-insets: 15;
+	-fx-spacing: 10;
+	-fx-pref-width: 620;
+	-fx-alignment: CENTER;
+	-fx-padding: 10 0 10 0;
+}
+
+	VBox > Label{
+		-fx-font-family: pixeled;
+		-fx-font-size: 40px;
+		-fx-text-fill: #FFFFFFFF;
+		-fx-alignment: CENTER;	
+		-fx-max-width: infinity;
+		
+		
+	}
+Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 40px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-max-width: infinity;
+	-fx-translate-y: 12;
+}
+
+AnchorPane{
+	-fx-background-color: rgba(0, 0, 0, .7);
+	-fx-border-insets: 15;
+	-fx-spacing: 10;
+}
+
+
+HBox{
+	-fx-alignment: CENTER;
+	-fx-background-color: "#00440055";
+	-fx-pref-height: 100;
+	-fx-border-width: 0;
+	-fx-spacing: 30;
+	-fx-padding: 10 10 10 10;
+}
+
+TextArea{
+	-fx-alignment: CENTER;
+	-fx-background-color: rgba(0, 0, 0, .1);
+	-fx-pref-height: 100;
+	-fx-border-width: 0;
+	-fx-padding: 10 10 10 10;
+	
+}
+
+Button{
+	-fx-font-family: pixeled;
+	-fx-font-size: 18px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-background-color: rgba(0, 0, 0, .1);
+	-fx-max-width: infinity;
+	
+}
+
+Button:hover{
+		-fx-background-color: rgba(0, 0, 0, .25);
+	}

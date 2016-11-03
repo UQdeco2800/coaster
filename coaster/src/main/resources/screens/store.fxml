@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+         prefWidth="900.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8"
+         xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="uq.deco2800.coaster.graphics.screens.controllers.StoreController">
+    <tabs>
+        <Tab text="Buy">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="buyTable" prefHeight="567.0" prefWidth="900.0">
+                            <columns>
+                                <TableColumn fx:id="sprite" prefWidth="100.0" text="Sprite">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="sprite" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="name" prefWidth="176.0" text="Name">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="name" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="description" prefWidth="290.0" text="Description">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="description" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="type" minWidth="0.0" prefWidth="79.0" text="Type">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="type" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="quantity" prefWidth="57.0" text="Qty.">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="quantity" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="value" prefWidth="82.0" text="Price">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="value" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                        <TableColumn fx:id="action" prefWidth="115.0" text="Buy">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="value" />
+                           </cellValueFactory>
+                        </TableColumn>
+                            </columns>
+                            <cursor>
+                                <Cursor fx:constant="DEFAULT" />
+                            </cursor>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab text="Sell">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="sellTable" prefHeight="342.0" prefWidth="600.0">
+                            <columns>
+                                <TableColumn fx:id="sprite" prefWidth="75.0" text="Sprite">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="sprite" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="name" prefWidth="119.0" text="Name">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="name" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="description" prefWidth="158.0" text="Description">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="description" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="type" prefWidth="71.0" text="Type">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="type" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="quantity" prefWidth="57.0" text="Qty.">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="quantity" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn fx:id="value" prefWidth="70.0" text="Price">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="value" />
+                                    </cellValueFactory>
+                                </TableColumn>
+                            </columns>
+                            <items>
+                                <FXCollections fx:factory="observableArrayList">
+
+                                </FXCollections>
+                            </items>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

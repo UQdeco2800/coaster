@@ -1,0 +1,58 @@
+StackPane{
+	-fx-background-color: rgba(0, 0, 0, .9);
+	-fx-background-radius: 30;
+	-fx-border-insets: 15;
+	-fx-border-color: #FFFFFFFF;
+	-fx-border-radius: 30;
+	-fx-alignment: center;
+}
+
+ Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 16px;
+	-fx-underline: false;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-translate-x: 16;
+ }
+
+.titleLabel{
+	-fx-font-family: pixeled;
+	-fx-font-size: 27px;
+	-fx-underline: false;
+
+ }
+
+ .keyLabel{
+	-fx-font-family: pixeled;
+	-fx-font-size: 20px;
+ 	-fx-underline: false;
+
+ }
+
+ .actionLabel{
+	-fx-font-family: pixeled;
+	-fx-font-size: 14px;
+ 	-fx-translate-x: 0;
+ 	-fx-text-alignment: left;
+ 		-fx-pref-width: 200;
+ 		 		-fx-pref-height: 30;
+ }
+
+
+
+Button{
+	-fx-font-family: pixeled;
+	-fx-font-size: 10px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-background-color: rgba(255, 255, 255, .05);
+	-fx-pref-width: 200;
+	-fx-translate-x: 260;
+ }
+
+Button:hover{
+	-fx-background-color: rgba(255, 255, 255, .25);
+}
+
+

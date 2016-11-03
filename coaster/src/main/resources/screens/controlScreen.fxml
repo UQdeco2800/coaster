@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane id="AnchorPane" fx:id="anchorPane" mouseTransparent="false" prefHeight="735.0" prefWidth="1068.0"
+            xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="uq.deco2800.coaster.graphics.screens.controllers.ControlScreenController">
+    <children>
+        <StackPane layoutX="230.0" prefHeight="723.0" prefWidth="628.0" stylesheets="@styles/controlScreen.css">
+        </StackPane>
+        <AnchorPane id="AnchorPane" layoutX="225.0" layoutY="16.0" prefHeight="719.0" prefWidth="747.0"
+                    stylesheets="@styles/controlScreen.css">
+            <children>
+                <Label id="" alignment="CENTER" layoutX="218.0" layoutY="-1.0" opacity="0.81" styleClass="titleLabel"
+                       stylesheets="@styles/controlScreen.css" text="CONTROLS" AnchorPane.topAnchor="-1.0">
+                    <font>
+                        <Font name="System Bold" size="40.0"/>
+                    </font>
+
+
+                </Label>
+                <Button fx:id="loadButton" layoutX="-166.0" layoutY="651.0" mnemonicParsing="false" onAction="#loadFile"
+                        prefHeight="31.0" prefWidth="171.0" text="Load"/>
+                <Button fx:id="saveButton" layoutX="65.0" layoutY="652.0" mnemonicParsing="false" onAction="#saveFile"
+                        prefHeight="31.0" prefWidth="171.0" text="Save"/>
+                <Button fx:id="exitButton" layoutX="-227.0" layoutY="14.0" maxWidth="50.0" mnemonicParsing="false"
+                        onAction="#exit" prefHeight="31.0" prefWidth="119.0" stylesheets="@styles/controlScreen.css"
+                        text="Exit"/>
+                <Button fx:id="testButton2" layoutX="64.0" layoutY="610.0" mnemonicParsing="false"
+                        onAction="#loadAlternateControls" prefHeight="31.0" prefWidth="171.0"
+                        text="Alternate Controls 1"/>
+                <Button fx:id="testButton" layoutX="-169.0" layoutY="610.0" mnemonicParsing="false"
+                        onAction="#buttonPress" prefHeight="31.0" prefWidth="171.0" text="Default Controls"/>
+            </children>
+        </AnchorPane>
+        <AnchorPane id="AnchorPane" layoutX="287.0" layoutY="131.0" prefHeight="483.0" prefWidth="291.0"
+                    stylesheets="@styles/controlScreen.css">
+            <children>
+                <Group id="Group" layoutX="-10.0" layoutY="-83.0" scaleX="1.0" scaleY="1.0">
+                    <children>
+                        <Label id="" layoutX="61.0" layoutY="15.0" prefWidth="128.0" styleClass="keyLabel"
+                               stylesheets="@styles/controlScreen.css" text="ACTION">
+                            <font>
+                                <Font name="System Bold" size="25.0" fx:id="x2"/>
+                            </font>
+                        </Label>
+                        <Label layoutX="43.0" layoutY="484.0" prefWidth="116.00009155273438" styleClass="actionLabel"
+                               text="Weapon 4" textAlignment="LEFT">
+                            <font>
+                                <Font size="18.0" fx:id="x1"/>
+                            </font>
+                        </Label>
+                        <Label font="$x1" layoutX="43.0" layoutY="455.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Weapon 3" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="422.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Weapon 2" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="391.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Weapon 1" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="270.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Move Up" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="516.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Weapon 5" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="361.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Special Attack" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="329.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Slide" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="208.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Move Left" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="238.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Move Right" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="82.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Dash" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="114.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Jump" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="144.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Inventory" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="178.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Move Down" textAlignment="LEFT"/>
+                        <Label font="$x1" layoutX="43.0" layoutY="300.0" prefWidth="116.00009155273438"
+                               styleClass="actionLabel" text="Skill Tree Menu" textAlignment="LEFT"/>
+                        <Label cache="true" cacheHint="DEFAULT" font="$x1" layoutX="43.0" layoutY="50.0"
+                               prefWidth="116.00009155273438" styleClass="actionLabel" text="Basic Attack"
+                               textAlignment="LEFT"/>
+                    </children>
+                </Group>
+            </children>
+        </AnchorPane>
+        <AnchorPane id="AnchorPane" layoutX="309.0" layoutY="61.0" prefWidth="243.0"
+                    stylesheets="@styles/controlScreen.css">
+            <children>
+                <Label layoutX="275.0" layoutY="-4.0" prefHeight="45.0" prefWidth="139.0" styleClass="keyLabel"
+                       stylesheets="@styles/controlScreen.css" text="KEYS">
+                    <font>
+                        <Font name="System Bold" size="25.0" fx:id="x4"/>
+                    </font>
+                </Label>
+                <Group id="Group" layoutX="56.0" layoutY="41.0" scaleX="1.0" scaleY="1.0">
+                    <children>
+                        <Button fx:id="basicAttack" layoutX="-55.0" layoutY="-3.0" minWidth="-1.0"
+                                mnemonicParsing="false" onAction="#remapBasicAttack" prefHeight="22.0" text="Remap">
+                            <font>
+                                <Font name="System Bold" size="13.0" fx:id="x3"/>
+                            </font>
+                        </Button>
+                        <Button id="basicAttack" fx:id="dash" font="$x3" layoutX="-55.0" layoutY="30.0" minWidth="-1.0"
+                                mnemonicParsing="false" onAction="#remapDash" prefHeight="22.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="jump" font="$x3" layoutX="-55.0" layoutY="63.0" minWidth="-1.0"
+                                mnemonicParsing="false" onAction="#remapJump" prefHeight="22.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="inventory" font="$x3" layoutX="-55.0" layoutY="96.0"
+                                minWidth="-1.0" mnemonicParsing="false" onAction="#remapInventory" prefHeight="22.0"
+                                text="Remap"/>
+                        <Button id="basicAttack" fx:id="moveDown" font="$x3" layoutX="-55.0" layoutY="128.0"
+                                minWidth="-1.0" mnemonicParsing="false" onAction="#remapMoveD" prefHeight="22.0"
+                                text="Remap"/>
+                        <Button id="basicAttack" fx:id="moveLeft" font="$x3" layoutX="-55.0" layoutY="162.0"
+                                minHeight="-Infinity" mnemonicParsing="false" onAction="#remapMoveL" prefHeight="28.0"
+                                text="Remap"/>
+                        <Button id="basicAttack" fx:id="moveRight" font="$x3" layoutX="-55.0" layoutY="192.0"
+                                minHeight="-Infinity" minWidth="-1.0" mnemonicParsing="false" onAction="#remapMoveR"
+                                prefHeight="29.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="moveUp" font="$x3" layoutX="-55.0" layoutY="223.0"
+                                minHeight="-Infinity" minWidth="-1.0" mnemonicParsing="false" onAction="#remapMoveU"
+                                prefHeight="27.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="skillTreeMenu" font="$x3" layoutX="-55.0" layoutY="252.0"
+                                minHeight="-Infinity" minWidth="-1.0" mnemonicParsing="false" onAction="#remapSkillTree"
+                                prefHeight="27.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="slide" font="$x3" layoutX="-55.0" layoutY="281.0"
+                                minWidth="-1.0" mnemonicParsing="false" onAction="#remapSlide" prefHeight="22.0"
+                                text="Remap"/>
+                        <Button id="basicAttack" fx:id="specialAttack" font="$x3" layoutX="-55.0" layoutY="314.0"
+                                minWidth="-1.0" mnemonicParsing="false" onAction="#remapSpecialAttack" prefHeight="22.0"
+                                text="Remap"/>
+                        <Button id="basicAttack" fx:id="w1" font="$x3" layoutX="-56.0" layoutY="347.0"
+                                minHeight="-Infinity" minWidth="-1.0" mnemonicParsing="false" onAction="#remapW1"
+                                prefHeight="28.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="w2" font="$x3" layoutX="-55.0" layoutY="377.0" minWidth="-1.0"
+                                mnemonicParsing="false" onAction="#remapW2" prefHeight="22.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="w3" font="$x3" layoutX="-55.0" layoutY="410.0"
+                                minHeight="-Infinity" minWidth="-1.0" mnemonicParsing="false" onAction="#remapW3"
+                                prefHeight="26.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="w4" font="$x3" layoutX="-55.0" layoutY="438.0" minWidth="-1.0"
+                                mnemonicParsing="false" onAction="#remapW4" prefHeight="22.0" text="Remap"/>
+                        <Button id="basicAttack" fx:id="w5" font="$x3" layoutX="-55.0" layoutY="471.0" minWidth="-1.0"
+                                mnemonicParsing="false" onAction="#remapW5" prefHeight="22.0" text="Remap"/>
+                    </children>
+                </Group>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

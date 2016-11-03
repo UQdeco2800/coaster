@@ -1,0 +1,45 @@
+.DS_Store
+ 
+*.swp
+*~
+ 
+bin/
+lib/
+out/
+classes/
+ 
+#Javadoc
+coaster/doc/
+ 
+# Gradle
+build
+.gradle
+ 
+# Eclipse
+.project
+.classpath
+.settings
+.metadata
+ 
+# IntelliJ IDEA
+*.iml
+.idea
+ 
+# Crash reports
+*.log
+ 
+# Database
+ 
+/bin
+ 
+ 
+# Merge conflicts
+*.orig
+ 
+ 
+# Local sonar installations
+sonar-project.properties
+.sonar/
+ 
+coaster/tmp/
+tmp/

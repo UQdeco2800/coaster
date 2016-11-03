@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="uiPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" style="-fx-background-color: #f0f3f4;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.SkillTreeController">
+   <children>
+      <Label layoutX="84.0" layoutY="25.0" text="Active">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="454.0" layoutY="25.0" text="Passive">
+         <font>
+            <Font name="Arial Bold" size="40.0" />
+         </font>
+      </Label>
+      <Pane layoutX="36.0" layoutY="85.0" prefHeight="69.0" prefWidth="219.0">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="55.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Pictures/这才是电音［%204%20］%20土high泥奏凯_3235862723235898.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="activeLevelUp1" layoutX="181.0" layoutY="28.0" mnemonicParsing="false" onAction="#activeSkillClick" text="+" />
+            <Label layoutX="77.0" layoutY="14.0" text="First Skill">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="This is the skill description" />
+               </tooltip>
+            </Label>
+            <Label layoutX="69.0" layoutY="38.0" text="Level 5" />
+            <Label layoutX="114.0" layoutY="38.0" text="Mana: 50" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#1f93ff00" height="69.0" layoutY="1.0" stroke="BLACK" strokeType="INSIDE" width="219.0" />
+         </children>
+      </Pane>
+      <Button fx:id="passiveLevelUp1" layoutX="342.0" layoutY="85.0" mnemonicParsing="false" onAction="#passiveSkillClick" prefHeight="84.0" prefWidth="85.0" style="-fx-background-image: url(https://images-na.ssl-images-amazon.com/images/I/41BeI1dnM7L._SY355_.jpg)top left; -fx-background-size: contain; -fx-background-position: center; -fx-background-repeat: stretch;" text="Button" textFill="TRANSPARENT">
+         <tooltip>
+            <Tooltip text="fdgdfgdfgdfgdgdfgdfgdfffffffffffffffffffffffffffffffffffffffffffff" />
+         </tooltip>
+      </Button>
+   </children>
+</Pane>

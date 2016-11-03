@@ -1,0 +1,15 @@
+HBox{
+	-fx-background-color: rgba(128, 179, 255, 1);
+	-fx-border-insets: 8;
+	-fx-border-width: 3;
+	-fx-border-color: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-max-width: infinity;
+	-fx-pref-width: 600;
+}
+
+Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 16;
+	-fx-text-fill: #FFFFFFFF;
+}

@@ -1,0 +1,26 @@
+/*
+ * Console.css
+ *
+ * Stylesheet for the debug console.
+ *
+ * Author: draganmarjanovic
+ */
+
+TextArea {
+    -fx-highlight-text-fill: #72db67;
+    -fx-text-inner-color: #72db67;
+}
+
+TextField {
+    -fx-highlight-text-fill: #72db67;
+    -fx-text-inner-color: #72db67;
+    -fx-background-color: black;
+    -fx-text-box-border: transparent;
+}
+
+
+
+.text-area .content {
+    -fx-background-color: black;
+    -fx-text-box-border: transparent;
+}

@@ -1,0 +1,49 @@
+VBox{
+	-fx-background-color: rgba(0, 0, 0, .7);
+	-fx-background-radius: 30;
+	-fx-border-insets: 15;
+	-fx-border-color: #FFFFFFFF;
+	-fx-border-radius: 30;
+	-fx-spacing: 15;
+	-fx-min-width: 512;
+	-fx-min-height: 650;
+}
+
+Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 16px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-max-width: infinity;
+}
+
+#header{
+	-fx-font-size: 36;
+	-fx-padding: 10 0 10 0;
+}
+
+Slider{
+	-fx-padding: 10 50 10 50;
+	-fx-value: 100;
+}
+
+CheckBox{
+	-fx-font-family: pixeled;
+	-fx-font-size: 16px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-max-width: infinity;
+}
+
+Button{
+	-fx-font-family: pixeled;
+	-fx-font-size: 18px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-background-color: rgba(255, 255, 255, .05);
+	-fx-max-width: infinity;
+}
+
+Button:hover{
+	-fx-background-color: rgba(255, 255, 255, .25);
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<StackPane fx:id="coasterRego" prefHeight="720.0" prefWidth="1280.0" stylesheets="@./styles/GenericStyle.css"
+           xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="uq.deco2800.coaster.graphics.screens.controllers.CoasterRegoController"
+           styleClass="solidPane">
+    <children>
+        <Pane id="background" prefHeight="200.0" prefWidth="200.0"/>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Pane prefHeight="200.0" prefWidth="300.0">
+                    <Button id="backButton" fx:id="backButton" layoutX="154.0" layoutY="14.0" maxWidth="100.0"
+                            mnemonicParsing="false" onAction="#backButtonAction" prefHeight="20.0" prefWidth="100.0"
+                            text="HOME" textAlignment="CENTER">
+                    </Button>
+                </Pane>
+                <VBox prefHeight="319.0" prefWidth="800.0">
+
+                    <children>
+                        <Label fx:id="regoLabel" alignment="CENTER" maxWidth="900.0" prefHeight="175.0"
+                               prefWidth="633.0" text="LOG IN / REGISTER" textAlignment="CENTER" wrapText="true">
+                        </Label>
+                        <Label fx:id="userLabel" prefHeight="17.0" prefWidth="800.0" text="Username">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="userField" alignment="TOP_LEFT" maxWidth="1.7976931348623157E308"
+                                   onAction="#userField" promptText="USERNAME">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" top="10.0"/>
+                            </padding>
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="20.0"/>
+                            </VBox.margin>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </TextField>
+                        <Label fx:id="passwordLabel" prefHeight="17.0" prefWidth="300.0" text="Password">
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </Label>
+                        <PasswordField fx:id="passwordField" onAction="#passwordField" promptText="PASSWORD">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                            <padding>
+                                <Insets bottom="10.0" left="5.0" top="10.0"/>
+                            </padding>
+                        </PasswordField>
+                        <Button id="loginButton" fx:id="loginButton" maxWidth="903.0" mnemonicParsing="false"
+                                onAction="#loginButton" prefHeight="27.0" prefWidth="903.0" text="LOGIN">
+                            <VBox.margin>
+                                <Insets top="20.0"/>
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold" size="18.0"/>
+                            </font>
+                        </Button>
+                    </children>
+                    <HBox.margin>
+                        <Insets top="100.0"/>
+                    </HBox.margin>
+                </VBox>
+                <Pane prefHeight="200.0" prefWidth="300.0"/>
+            </children>
+        </HBox>
+    </children>
+</StackPane>

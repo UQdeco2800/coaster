@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane fx:id="uiPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="648.0" prefWidth="950.0"
+      stylesheets="@styles/skillTree.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="uq.deco2800.coaster.graphics.screens.controllers.SkillTreeController">
+    <children>
+      <ImageView id="skillDescription" fitHeight="648.0" fitWidth="950.0" pickOnBounds="true">
+         <image>
+            <Image url="@../sprites/SkilltreeBackground.png" />
+         </image>
+      </ImageView>
+        <Label fx:id="skillPointLabel" layoutX="897.0" layoutY="48.0" text="0" />
+          <Button id="damageBoost" fx:id="damageBoost" layoutX="153.0" layoutY="524.0" mnemonicParsing="false"
+                  onAction="#damageBoostInfoPanel">
+              <tooltip>
+                  <Tooltip graphicTextGap="9.0" text="Damage boost" />
+              </tooltip>
+          </Button>
+          <Label layoutX="575.0" layoutY="109.0" text="Dash" />
+          <Button id="dash" fx:id="dash" layoutX="565.0" layoutY="123.0" mnemonicParsing="false"
+                  onAction="#dashSkillClick">
+              <tooltip>
+                  <Tooltip graphicTextGap="9.0" text="Dash" />
+              </tooltip>
+          </Button>
+          <Label layoutX="551.0" layoutY="195.0" text="Double Jump">
+         <font>
+            <Font name="Minecraftia 2.0" size="12.0" />
+         </font></Label>
+      <ImageView fx:id="skillIcon" fitHeight="121.0" fitWidth="121.0" layoutX="754.0" layoutY="123.0"
+                 pickOnBounds="true" preserveRatio="true" />
+          <Button id="deathBlossom" fx:id="deathBlossomUp" layoutX="44.0" layoutY="121.0" mnemonicParsing="false"
+                  onAction="#deathBlossomSkillClick" prefHeight="64.0" prefWidth="64.0">
+              <tooltip>
+                  <Tooltip fx:id="deathBlossomTooltip" text="Death Blossom" />
+              </tooltip>
+          </Button>
+          <Button id="splitShot" fx:id="splitShotUp" layoutX="153.0" layoutY="286.0" mnemonicParsing="false"
+                  onAction="#splitShotSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="splitShotTooltip" text="Empty Tooltip" />
+              </tooltip>
+          </Button>
+          <Button id="shield" fx:id="shieldUp" layoutX="309.0" layoutY="121.0" mnemonicParsing="false"
+                  onAction="#timeLockSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="shieldTooltip" text="Empty Tooltip" />
+              </tooltip>
+          </Button>
+          <Button id="sprint" fx:id="sprintUp" layoutX="566.0" layoutY="315.0" mnemonicParsing="false" onAction="#sprintSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="sprintTooltip" text="Sprint!" />
+              </tooltip>
+          </Button>
+          <Button id="sniperShot" fx:id="sniperShotUp" layoutX="44.0" layoutY="286.0" mnemonicParsing="false"
+                  onAction="#sniperShotSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="sniperShotTooltip" text="Sniper Shot" />
+              </tooltip>
+          </Button>
+          <Label fx:id="deathBlossomLevel" layoutX="104.0" layoutY="158.0" text="0" />
+          <Label layoutX="30.0" layoutY="101.0" text="Death Blossom" />
+          <Label layoutX="145.0" layoutY="187.0" text="Omnislash" />
+          <Button id="omnislash" fx:id="omnislashUp" layoutX="153.0" layoutY="204.0" mnemonicParsing="false" onAction="#omnislashSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="omnislashTooltip" text="Omnislash" />
+              </tooltip>
+          </Button>
+          <Label fx:id="splitShotLevel" layoutX="205.0" layoutY="325.0" text="0" />
+          <Label fx:id="omnislashLevel" layoutX="205.0" layoutY="251.0" text="0" />
+          <Button id="timeLock" fx:id="timeLockUp" layoutX="44.0" layoutY="203.0" mnemonicParsing="false"
+                  onAction="#timeLockSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="timeLockTooltip" text="Time Lock" />
+              </tooltip>
+          </Button>
+          <Label fx:id="timeLockLevel" layoutX="99.0" layoutY="239.0" text="0" />
+          <Label layoutX="43.0" layoutY="185.0" text="TimeLock" />
+      <Label layoutX="296.0" layoutY="185.0" text="Health Boost" />
+      <Button id="healthBoost" layoutX="309.0" layoutY="206.0" mnemonicParsing="false" onAction="#healthSkillClick">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="Health Boost" />
+         </tooltip>
+      </Button>
+      <Label layoutX="565.0" layoutY="289.0" text="Sprint" />
+      <Button layoutX="431.0" layoutY="223.0" mnemonicParsing="false" text="+" onAction="#fieldSkillClick">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="AT Field" />
+         </tooltip>
+      </Button>
+      <Label layoutX="298.0" layoutY="263.0" text="Mana Boost" />
+      <Button id="manaBoost" layoutX="320.0" layoutY="296.0" mnemonicParsing="false" onAction="#manaSkillClick" text="+">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="Mana Boost" />
+         </tooltip>
+      </Button>
+      <Label layoutX="421.0" layoutY="101.0" text="heal" />
+      <Button id="heal" fx:id="healing" layoutX="421.0" layoutY="121.0" mnemonicParsing="false"
+              onAction="#healingSkillClick">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="Passive healing" />
+         </tooltip>
+      </Button>
+          <Button id="doubleJump" fx:id="doubleJump" layoutX="566.0" layoutY="220.0" mnemonicParsing="false"
+                  onAction="#doubleJumpSkillClick">
+              <tooltip>
+                  <Tooltip graphicTextGap="9.0" text="Double Jump" />
+              </tooltip>
+         <font>
+            <Font name="Minecraftia 2.0" size="12.0" />
+         </font>
+          </Button>
+          <Label layoutX="46.0" layoutY="347.0" text="Fire rate" />
+          <Button id="fireRate" fx:id="rateOfFire" layoutX="44.0" layoutY="369.0" mnemonicParsing="false"
+                  onAction="#rateOfFireSkillClick">
+              <tooltip>
+                  <Tooltip graphicTextGap="9.0" text="Rate of fire" />
+              </tooltip>
+          </Button>
+      <Button layoutX="579.0" layoutY="411.0" mnemonicParsing="false" text="+" onAction="#overChargeSkillClick">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="Overcharge" />
+         </tooltip>
+         
+         <Button layoutX="431.0" layoutY="223.0" mnemonicParsing="false" text="+">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="Empty" />
+         </tooltip>
+      </Button>
+      </Button>
+          <Label layoutX="148.0" layoutY="269.0" text="Split shot" />
+          <Label fx:id="highNoonLevel" layoutX="97.0" layoutY="325.0" text="0" />
+          <Label layoutX="39.0" layoutY="270.0" text="Sniper Shot" />
+          <Button id="nuke" fx:id="nukeUp" layoutX="154.0" layoutY="121.0" mnemonicParsing="false"
+                  onAction="#nukeSkillClick">
+              <tooltip>
+                  <Tooltip fx:id="nukeTooltip" text="NUKE" />
+              </tooltip>
+          </Button>
+          <Label fx:id="nukeLevel" layoutX="208.0" layoutY="165.0" text="0" />
+          <Label layoutX="160.0" layoutY="101.0" text="Nuke" />
+          <Label layoutX="136.0" layoutY="507.0" text="Damage Boost" />
+      <Label layoutX="315.0" layoutY="101.0" text="Shield" />
+      <Button id="skillLevelUp" layoutX="753.0" layoutY="551.0" mnemonicParsing="false" onAction="#skillLevelUp"
+              prefHeight="0.0" prefWidth="15.0" />
+      <Button id="closeButton" fx:id="closeButton" layoutX="47.0" layoutY="16.0" mnemonicParsing="false"
+              onAction="#closePanel" prefHeight="64.0" prefWidth="64.0" style="-fx-background-repeat: NOREPEAT;" />
+      <Button id="headshot" fx:id="critChance" layoutX="44.0" layoutY="452.0" mnemonicParsing="false" onAction="#critChanceSkillClick">
+         <tooltip>
+            <Tooltip graphicTextGap="9.0" text="Increase Critical Hit Chance!" />
+         </tooltip>
+      </Button>
+      <Label layoutX="29.0" layoutY="434.0" text="critical chance" />
+      <Button id="critChance" layoutX="411.0" layoutY="280.0" mnemonicParsing="false" onAction="#invincibleSkillClick"
+               prefHeight="64.0" prefWidth="64.0">
+         <tooltip>
+            <Tooltip fx:id="critChance" text="INVINCIBLE" />
+         </tooltip>
+      </Button>
+      <Label layoutX="409.0" layoutY="267.0" text="new passive" />
+      <Label fx:id="skillType" layoutX="782.0" layoutY="348.0" prefHeight="23.0" prefWidth="84.0" text="Passive">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="skillDescription" alignment="TOP_LEFT" layoutX="725.0" layoutY="393.0" prefHeight="141.0"
+             prefWidth="181.0" wrapText="true" />
+      <Label fx:id="dashState" disable="true" layoutX="571.0" layoutY="158.0" text="Locked" />
+      <Label fx:id="doubleJumpState" disable="true" layoutX="571.0" layoutY="256.0" text="Locked" />
+      <Button id="Qkey" fx:id="keybind1" layoutX="737.0" layoutY="280.0" mnemonicParsing="false" onAction="#keyBind1" />
+      <Button id="Ekey" fx:id="keybind2" layoutX="782.0" layoutY="280.0" mnemonicParsing="false" onAction="#keyBind2" />
+      <Button id="Rkey" fx:id="keybind3" layoutX="824.0" layoutY="280.0" mnemonicParsing="false" onAction="#keyBind3" />
+      <Button id="Fkey" fx:id="keybind4" layoutX="865.0" layoutY="280.0" mnemonicParsing="false" onAction="#keyBind4" />
+    </children>
+</Pane>

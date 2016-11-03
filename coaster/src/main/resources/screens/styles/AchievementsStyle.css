@@ -1,0 +1,41 @@
+ScrollPane{
+	-fx-min-width: 636;
+	-fx-pref-height: 600;
+	-fx-background-color: transparent;
+}
+
+.TransScrollPane > .viewport {
+    -fx-background-color: transparent;
+}
+
+VBox{
+	-fx-spacing: 10;
+	-fx-pref-width: 620;
+	-fx-alignment: CENTER;
+	-fx-padding: 10 0 10 0;
+}
+
+	VBox > Label{
+		-fx-font-family: pixeled;
+		-fx-font-size: 14;
+	}
+
+HBox{
+	-fx-alignment: CENTER;
+	-fx-background-color: "#00440055";
+	-fx-pref-height: 100;
+	-fx-border-width: 0;
+	-fx-spacing: 30;
+	-fx-padding: 10 10 10 10;
+}
+
+Button{
+	-fx-font-family: pixeled;
+	-fx-font-size: 18px;
+	-fx-background-color: rgba(0, 0, 0, .1);
+	-fx-max-width: infinity;
+}
+
+	Button:hover{
+		-fx-background-color: rgba(0, 0, 0, .25);
+	}

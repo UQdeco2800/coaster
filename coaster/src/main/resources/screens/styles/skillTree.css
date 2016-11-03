@@ -1,0 +1,190 @@
+#closeButton{
+	-fx-pref-width: 64;
+	-fx-pref-height: 64;
+	-fx-background-image: url(../../sprites/closeButton.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+#skillLevelUp{
+	-fx-pref-width: 128;
+	-fx-pref-height: 64;
+	-fx-background-image: url(../../sprites/levelUpButton.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+}
+
+#headshot{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/headshot64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#deathBlossom{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/deathBlossom64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#nuke{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/nuke64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#omnislash{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/omnislash64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#heal{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/heal64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#shield{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/shield64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#dash{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/dash64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#fireRate{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/fireRate64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#healthBoost{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/health64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#sniperShot{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/headshot64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#doubleJump{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/doubleJump64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#timeLock{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/timeLock64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#splitShot{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/splitShot64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#damageBoost{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/damageBoost64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#teleport{
+	-fx-pref-width: 50;
+	-fx-pref-height: 50;
+	-fx-background-image: url(../../sprites/skills/teleport64.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#Qkey{
+	-fx-pref-width: 32;
+	-fx-pref-height: 32;
+	-fx-background-image: url(../../sprites/Qkey.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#Ekey{
+	-fx-pref-width: 32;
+	-fx-pref-height: 32;
+	-fx-background-image: url(../../sprites/Ekey.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#Rkey{
+	-fx-pref-width: 32;
+	-fx-pref-height: 32;
+	-fx-background-image: url(../../sprites/Rkey.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#Fkey{
+	-fx-pref-width: 32;
+	-fx-pref-height: 32;
+	-fx-background-image: url(../../sprites/Fkey.png);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: contain;
+}
+
+#skillDescription .scroll-pane .viewport, #skillDescription .content{
+	-fx-background-color: transparent;
+}

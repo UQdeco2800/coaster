@@ -1,0 +1,25 @@
+#background{
+	-fx-background-image: url(../../sprites/tiles/castle-brick.png);
+     -fx-background-size: cover;
+}
+
+Pane {
+	-fx-background-image: url(../../sprites/tiles/castle-brick.png);
+    -fx-background-color: black;
+
+}
+
+Pane {
+    -fx-border-radius: 10 10 0 0;
+    -fx-background-radius: 10 10 0 0;
+    -fx-background-radius: 15;
+}
+
+Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 26px;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-max-width: infinity;
+	-fx-translate-y: 12;
+}

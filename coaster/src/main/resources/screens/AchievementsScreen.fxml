@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<ScrollPane fx:id="mainContainer" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="uq.deco2800.coaster.graphics.screens.controllers.AchievementsController"
+            stylesheets="@./styles/AchievementsStyle.css">
+   <content>
+      <VBox fx:id="achievementsContainer" />
+   </content>
+</ScrollPane>

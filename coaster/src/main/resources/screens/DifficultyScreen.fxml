@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<AnchorPane fx:id="difficultyContainer" stylesheets="@./styles/GenericStyle.css" xmlns="http://javafx.com/javafx/8.0.60"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="uq.deco2800.coaster.graphics.screens.controllers.DifficultyController">
+
+    <StackPane styleClass="solidPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+               AnchorPane.rightAnchor="0.0"
+               AnchorPane.topAnchor="0.0">
+        <children>
+            <Pane id="background" fx:id="background"/>
+            <HBox prefHeight="100.0" prefWidth="200">
+
+                <children>
+                    <Pane prefHeight="200" prefWidth="90"/>
+                    <Pane prefHeight="200" prefWidth="300">
+                        <children>
+                            <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" maxWidth="100"
+                                    mnemonicParsing="false" onAction="#onBackButton" text="BACK"
+
+                                    textAlignment="CENTER"/>
+                        </children>
+                        <HBox.margin>
+                            <Insets left="-80.0" right="-15.0"/>
+                        </HBox.margin>
+                    </Pane>
+                    <VBox fx:id="difficulty" alignment="TOP_CENTER" HBox.hgrow="ALWAYS">
+                        <children>
+                            <ImageView fx:id="" preserveRatio="false">
+                                <image>
+                                    <Image url="@../sprites/coaster_logo.png"/>
+                                </image>
+                            </ImageView>
+                            <Button fx:id="tutorial" mnemonicParsing="false" onAction="#onTutorialSelect"
+                                    text="TUTORIAL"/>
+                            <Button fx:id="easy" mnemonicParsing="false" onAction="#onEasySelect" text="EASY"/>
+                            <Button fx:id="medium" mnemonicParsing="false" onAction="#onMediumSelect" text="MEDIUM"/>
+                            <Button fx:id="hard" mnemonicParsing="false" onAction="#onHardSelect" text="HARD"/>
+                            <Button fx:id="insane" mnemonicParsing="false" onAction="#onInsaneSelect" text="INSANE"/>
+                            <Line id="line" endX="100.0" startX="-100.0" strokeLineCap="ROUND" strokeLineJoin="ROUND"
+                                  strokeWidth="3.0">
+                                <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0"/>
+                                </VBox.margin>
+                            </Line>
+                            <Button fx:id="multiplayer" mnemonicParsing="false" disable="false" styleClass="multiplayer"
+                                    onAction="#onMultiplayerButton" text="MULTIPLAYER"/>
+                        </children>
+                    </VBox>
+                    <Pane prefHeight="200.0" prefWidth="300"/>
+                </children>
+            </HBox>
+        </children>
+    </StackPane>
+
+</AnchorPane>

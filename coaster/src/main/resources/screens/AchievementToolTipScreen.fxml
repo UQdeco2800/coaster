@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<HBox fx:id="mainContainer" stylesheets="@./styles/AchievementToolTipStyle.css"
+      xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="uq.deco2800.coaster.graphics.screens.controllers.AchievementToolTipController">
+   <children>
+      <ImageView fx:id="icon" fitHeight="250.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+      <VBox>
+         <children>
+            <Label fx:id="name" text="NAME" />
+            <Label fx:id="description" text="DESC" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,36 @@
+/*
+	Stylesheet for PausemenuScreen
+*/
+
+VBox{
+	-fx-background-color: rgba(0, 0, 0, .7);
+	-fx-background-radius: 30;
+	-fx-border-insets: 15;
+	-fx-border-color: #FFFFFFFF;
+	-fx-border-radius: 30;
+	-fx-spacing: 20;
+	-fx-min-width: 512;
+	-fx-min-height: 650;
+}
+
+Label{
+	-fx-font-family: pixeled;
+	-fx-font-size: 36px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-max-width: infinity;
+	-fx-translate-y: 12;
+}
+
+Button{
+	-fx-font-family: pixeled;
+	-fx-font-size: 20px;
+	-fx-text-fill: #FFFFFFFF;
+	-fx-background-color: rgba(255, 255, 255, .05);
+	-fx-max-width: infinity;
+}
+
+Button:hover{
+	-fx-background-color: rgba(255, 255, 255, .25);
+}

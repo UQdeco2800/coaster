@@ -1,0 +1,101 @@
+Button{
+    -fx-background-color: transparent;
+    -fx-font-family: pixeled;
+    -fx-font-size: 25;
+}
+
+
+#background{
+	-fx-pref-width: 100%;
+	-fx-pref-height: 100%;
+    -fx-background-size: cover;
+    -fx-position: absolute;
+    -fx-top:0;
+    -fx-bottom:0;
+    -fx-left:0;
+    -fx-right:0;
+	-fx-background-image: url(../../sprites/background.gif);
+
+	-fx-opacity: 0.4;
+	    -fx-fit-to-width: stage;
+        -fx-fit-to-height: stage;
+
+}
+
+
+#backButton{
+    -fx-font-size: 15;
+}
+
+Button:hover{
+    -fx-background-color: rgba(255, 255, 255, .25);
+
+}
+
+#aboutTitle{
+    -fx-font-family: pixeled;
+    -fx-font-size: 40;
+}
+
+#leaderboardTitle{
+    -fx-font-family: pixeled;
+    -fx-font-size: 40;
+}
+
+#blurb{
+    -fx-background-color: transparent;
+    -fx-font-size: 20;
+    -fx-font-family: arial;
+    -fx-font-weight: 600;
+
+}
+
+#regoLabel {
+    -fx-font-family: pixeled;
+    -fx-font-size: 40;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(255, 255, 255, .2);
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(gray,80%);
+    -fx-background-radius: 0em;
+}
+
+.scroll-pane.scroll-bar:vertical .thumb{
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
+
+#leaderboardHeadings{
+    -fx-font-family: pixeled;
+    -fx-font-size: 20;
+}
+
+#leaderboardData{
+    -fx-font-family: pixeled;
+    -fx-font-size: 15;
+}
+
+#warningDescription {
+	-fx-font-family: pixeled;
+    -fx-font-size: 15;
+}
+
+#scoreRecord {
+	-fx-font-family: pixeled;
+    -fx-font-size: 15;
+}
+

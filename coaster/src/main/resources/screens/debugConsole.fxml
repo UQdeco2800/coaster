@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.45"
+      prefHeight="327.0" prefWidth="585.0" stylesheets="@styles/Console.css" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.ConsoleController">
+   <children>
+      <TextArea fx:id="screen" editable="false" focusTraversable="false" prefHeight="300.0" prefWidth="585.0"
+                style="-fx-background-color: 000000;" text="Developer Console V1.0&#10;" wrapText="true" />
+      <TextField fx:id="prompt" layoutX="1.0" layoutY="296.0" onAction="#onProcessCommand" prefHeight="27.0"
+                 prefWidth="583.0" />
+   </children>
+</Pane>

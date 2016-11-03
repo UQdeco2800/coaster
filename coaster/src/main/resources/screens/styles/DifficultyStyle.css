@@ -1,0 +1,16 @@
+#back {
+	-fx-font-size: 15;
+}
+
+VBox{
+	-fx-alignment: top-center;
+	-fx-spacing: 20;
+}
+
+.menuItem{
+	  -fx-pref-width: 300;
+  }
+
+.menuItem:hover{
+	-fx-background-color: rgba(255, 255, 255, .25);
+}

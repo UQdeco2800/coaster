@@ -1,0 +1,56 @@
+allprojects {
+    group 'deco2800-2016-coaster'
+    version '1.0-SNAPSHOT'
+}
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+subprojects {
+    apply plugin: 'java';
+    apply plugin: 'eclipse';
+    apply plugin: 'idea';
+    apply plugin: 'application';
+    apply plugin: 'jacoco';
+
+    jacoco {
+        toolVersion = "0.7.7.201606060606"
+    }
+
+    test {
+        jacoco {
+            append = false
+            destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        }
+    }
+
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+    }
+
+    javadoc {
+        options.tags = ['require', 'ensure']
+    }
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenLocal()
+        maven { url 'http://deco2800-artifactory.uqcloud.net//artifactory/libs-release/' }
+    }
+
+    dependencies {
+        // DECO2800 dependencies
+
+        compile(group: 'uq.deco2800.singularity', name: 'common', version: '0.6-SNAPSHOT', changing: true)
+        compile(group: 'uq.deco2800.singularity', name: 'clients', version: '0.6-SNAPSHOT', changing: true)
+        testCompile group: 'junit', name: 'junit', version: '4.11'
+
+        // Logging via Log4J 2.0 using the SLF4J API
+        compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
+        // https://mvnrepository.com/artifact/org.reflections/reflections
+        //compile group: 'org.reflections', name: 'reflections', version: '0.9.5-RC2'
+    }
+}

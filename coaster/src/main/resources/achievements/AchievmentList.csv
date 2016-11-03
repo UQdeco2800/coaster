@@ -1,0 +1,31 @@
+Name,Description,Value,imagePath,Type
+Beginner,Reach Level 2,2,achi-level-2.png,LEVELS
+Profecient,Reach Level 5,5,achi-level-5.png,LEVELS
+Competent,Reach Level 10,10,achi-level-10.png,LEVELS
+Master,Reach Level 15,15,achi-level-15.png,LEVELS
+Gifted,Reach Level 25,25,achi-level-25.png,LEVELS
+Murder,Kill 1 Mobs,1,achi-kill-1.png,KILLS
+Slaughter,Kill 10 Mobs,10,achi-kill-10.png,KILLS
+Massacre,Kill 25 Mobs,25,achi-kill-25.png,KILLS
+Genocide,Kill 50 Mobs,50,achi-kill-50.png,KILLS
+Extinction,Kill 100 Mobs,100,achi-kill-100.png,KILLS
+Penny Pincher,Collect 100 Coins,100,achi-coin-1.png,COINS
+Collector,Collect 200 Coins,200,achi-coin-2.png,COINS
+Wealthy,Collect 500 Coins,500,achi-coin-3.png,COINS
+Rolling In It,Collect 2000 Coins,2000,achi-coin-4.png,COINS
+Made of Money,Collect 10000 Coins,10000,achi-coin-5.png,COINS
+Bat Master,Kill a Bat Boss,BAT BOSS,achi-boss-bat.png,BOSS
+Eye Master,Kill an Eye Boss,EYEBALL BOSS,achi-boss-eye.png,BOSS
+Ice Master,Kill an Ice Boss,ICESPIRIT BOSS,achi-boss-ice.png,BOSS
+Rhino Master,Kill a Rhino Boss,RHINO BOSS,achi-boss-rhino.png,BOSS
+Skeleton Master,Kill a Skeleton Boss,SKELETON BOSS,achi-boss-skeleton.png,BOSS
+Slime Master,Kill a Slime Boss,SPACESLIME BOSS,achi-boss-slime.png,BOSS
+Space Slime Master,Kill a Space Slime Boss,SANDSLIME BOSS,achi-boss-space-slime.png,BOSS
+Spider Master,Kill a Spider Boss,SPIDER BOSS,achi-boss-spider.png,BOSS
+Duck Master,Defeat the Duck King,DUCK KING,achi-duck-king.png,BOSS
+First Item,Collect 1 Pickup,1,achi-pickup-1.png,PICKUPS
+Equpied,Collect 10 Pickups,10,achi-pickup-2.png,PICKUPS
+Scavenger,Collect 50 Pickups,50,achi-pickup-3.png,PICKUPS
+Pickupperer,Collect 100 Pickups,100,achi-pickup-4.png,PICKUPS
+Gotta Collect em All,Collect 200 Pickups,200,achi-pickup-5.png,PICKUPS
+Learning the Ropes,Complete the Tutorial,TUTORIAL,achi-tut.png,MISC

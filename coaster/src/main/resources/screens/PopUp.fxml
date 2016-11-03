@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<HBox fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity"
+	  minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="600.0"
+	  xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1"
+	  fx:controller="uq.deco2800.coaster.graphics.screens.controllers.PopUpController"
+	  stylesheets="@./styles/PopUpStyle.css">
+	<children>
+		<Label fx:id="message" text="LABEL" />
+	</children>
+</HBox>

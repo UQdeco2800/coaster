@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="633.0" stylesheets="@styles/inGameTutorialStyle.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.CommerceScreenController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="574.0" prefWidth="641.0" stylesheets="@styles/inGameTutorialStyle.css">
+         <children>
+            <TextArea layoutX="14.0" layoutY="118.0" prefHeight="212.0" prefWidth="587.0" style="-fx-background-color: rgba(0, 0, 0, .7); -fx-min-height: 400;" text="The Commerce system contains four main facets:&#10;&#10;1) The Bank: &#10;The aim of the Bank is to allow players to store their Items and Gold between checkpoints safely, and eventually, upon death, goods stored in the Bank will remain.&#10;Players can access the bank by pressing the 'V' key&#10;&#10;2) Currency: &#10;The total amount of coin players get while playing the game&#10;&#10;3)The Player Value / Inventory:&#10;Inventory stores the list of items and weapons the player owns. Press the &quot;I&quot; key to access this list&#10;&#10;4) Stores:&#10;Stores appears in game and allow players to buy and sell items in their inventory&#10;&#10;" wrapText="true">
+               <font>
+                  <Font name="Pixeled Regular" size="11.0" />
+               </font>
+            </TextArea>
+            <Label contentDisplay="CENTER" layoutX="153.0" layoutY="2.0" prefHeight="80.0" prefWidth="336.0" stylesheets="@styles/inGameTutorialStyle.css" text="COMMERCE" />
+            <BorderPane layoutX="7.0" layoutY="512.0">
+               <left>
+                  <Button mnemonicParsing="false" onAction="#onBackButtonClick" text="BACK" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

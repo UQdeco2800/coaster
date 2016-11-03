@@ -1,0 +1,127 @@
+Button{
+    -fx-background-color: transparent;
+    -fx-font-family: pixeled;
+    -fx-font-size: 25;
+}
+
+#background{
+	-fx-background-image: url(../../sprites/background.gif);
+	-fx-background-size: cover;
+	-fx-opacity: 0.6;
+    -fx-pref-height: inherit;
+    -fx-pref-width: inherit;
+}
+
+StackPane {
+    -fx-pref-height: inherit;
+    -fx-pref-width: inherit;
+}
+
+AnchorPane {
+    -fx-pref-height: 720;
+    -fx-pref-width: 1280;
+}
+#logoImage {
+    -fx-image: url("/sprites/coaster_logo.png");
+}
+#backButton{
+    -fx-font-size: 15;
+}
+
+Button:hover{
+    -fx-background-color: rgba(255, 255, 255, .25);
+}
+
+#aboutTitle{
+    -fx-font-family: pixeled;
+    -fx-font-size: 40;
+}
+
+#line {
+
+}
+
+#leaderboardTitle{
+    -fx-font-family: pixeled;
+    -fx-font-size: 40;
+}
+
+#blurb{
+    -fx-background-color: transparent;
+    -fx-font-size: 20;
+    -fx-font-family: arial;
+    -fx-font-weight: 600;
+
+}
+
+#regoLabel {
+    -fx-font-family: pixeled;
+    -fx-font-size: 40;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: rgba(255, 255, 255, .2);
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+
+.scroll-pane.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive(gray,80%);
+    -fx-background-radius: 0em;
+}
+
+.scroll-pane.scroll-bar:vertical .thumb{
+    -fx-background-color:derive(black,90%);
+    -fx-background-insets: 0, 0, 0;
+    -fx-background-radius: 0em;
+}
+
+#leaderboardHeadings{
+    -fx-font-family: pixeled;
+    -fx-font-size: 20;
+}
+
+#leaderboardData{
+    -fx-font-family: pixeled;
+    -fx-font-size: 15;
+}
+
+#warningDescription {
+	-fx-font-family: pixeled;
+    -fx-font-size: 15;
+}
+#difficulty {
+    -fx-alignment: top-center;
+    -fx-spacing: 20;
+}
+#scoreRecord {
+	-fx-font-family: pixeled;
+    -fx-font-size: 15;
+}
+
+
+.loadGrey {
+    -fx-text-fill: gray;
+}
+
+.loadGrey:hover {
+    -fx-background-color: transparent;
+}
+/* solidPane is a class that signifies a pane should not be able to see anything underneath it and will put a
+ * while background behind it.
+ */
+.solidPane {
+    -fx-background-color: white;
+}
+
+.menuItem{
+    -fx-pref-width: 300;
+}

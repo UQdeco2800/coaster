@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.coaster.graphics.screens.controllers.InventoryController">
+    <children>
+        <ImageView fx:id="mainWindow" fitHeight="623.0" fitWidth="860.0" layoutX="208.0" layoutY="39.0">
+            <image>
+                <Image url="@../sprites/ui/inventory/Main%20Window.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="502.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INVENTORY" wrappingWidth="290.41723638028543">
+            <font>
+                <Font name="Pixeled Regular" size="31.0" />
+            </font>
+        </Text>
+        <Text layoutX="253.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weapons &amp; Items">
+            <font>
+                <Font name="Pixeled Regular" size="24.0" />
+            </font>
+        </Text>
+        <Text layoutX="254.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Armour">
+            <font>
+                <Font name="Pixeled Regular" size="25.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="219.0" fitWidth="365.0" layoutX="657.0" layoutY="119.0" onMouseClicked="#trashFunction">
+            <image>
+                <Image url="@../sprites/ui/inventory/Description%20Box.png" />
+            </image>
+        </ImageView>
+        <GridPane layoutX="252.0" layoutY="270.0" prefHeight="79.0" prefWidth="267.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.021728515625" minWidth="10.0" prefWidth="47.433265686035156" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.63053131103516" minWidth="10.0" prefWidth="50.566734313964844" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.95654296875" minWidth="10.0" prefWidth="45.58686828613281" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.5089569091797" minWidth="10.0" prefWidth="24.926910400390625" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <ImageView fitHeight="57.0" fitWidth="57.0">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Equip%20Slot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="10.0" layoutY="7.0" GridPane.columnIndex="1">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Equip%20Slot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="10.0" layoutY="7.0" GridPane.columnIndex="2">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Equip%20Slot.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="10.0" layoutY="7.0" GridPane.columnIndex="3">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Equip%20Slot.png" />
+                    </image>
+                </ImageView>
+            <Button fx:id="aEquip1" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" />
+            <Button fx:id="aEquip2" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="1" />
+            <Button fx:id="aEquip3" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="2" />
+            <Button fx:id="aEquip4" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="3" />
+            <ImageView fx:id="aEquip1Sprite" disable="true" fitHeight="45.0" fitWidth="45.0">
+               <image>
+                  <Image url="@../sprites/ui/inventory/empty_slot.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fx:id="aEquip2Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/empty_slot.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fx:id="aEquip3Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/empty_slot.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </ImageView>
+            <ImageView fx:id="aEquip4Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../sprites/ui/inventory/empty_slot.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="6.0" />
+               </GridPane.margin>
+            </ImageView>
+            </children>
+        </GridPane>
+        <GridPane layoutX="254.0" layoutY="148.0" prefHeight="79.0" prefWidth="352.0">
+            <children>
+                <ImageView fitHeight="54.0" fitWidth="54.0">
+                    <image>
+                        <Image url="@../../../../build/resources/main/sprites/ui/inventory/Quick%20Slot%201.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="10.0" layoutY="7.0" GridPane.columnIndex="1">
+                    <image>
+                        <Image url="@../../../../build/resources/main/sprites/ui/inventory/Quick%20Slot%202.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="10.0" layoutY="7.0" GridPane.columnIndex="2">
+                    <image>
+                        <Image url="@../../../../build/resources/main/sprites/ui/inventory/Quick%20Slot%203.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="54.0" fitWidth="54.0" layoutX="10.0" layoutY="7.0" GridPane.columnIndex="3">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Quick%20Slot%204.png" />
+                    </image>
+                </ImageView>
+                <Button fx:id="wEquip1" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" />
+                <Button fx:id="wEquip2" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="1" />
+                <Button fx:id="wEquip3" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="2" />
+                <Button fx:id="wEquip4" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="3" />
+                <ImageView fx:id="wEquip2Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="1">
+                    <image>
+                        <Image url="@../../../../build/resources/main/sprites/sword.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="wEquip1Sprite" depthTest="DISABLE" disable="true" fitHeight="45.0" fitWidth="45.0" mouseTransparent="true">
+                    <image>
+                        <Image url="@../sprites/handgun.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="wEquip3Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="2">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+                    </image>
+                </ImageView>
+            <ImageView GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Quick%20Slot%205.png" />
+               </image>
+            </ImageView>
+                <ImageView fx:id="wEquip4Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="3">
+                    <image>
+                        <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+                    </image>
+                    <GridPane.margin>
+                        <Insets bottom="3.0" left="4.0" />
+                    </GridPane.margin>
+                </ImageView>
+            <ImageView fx:id="wEquip5Sprite" disable="true" fitHeight="45.0" fitWidth="45.0" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="wEquip5" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="4" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.021728515625" minWidth="10.0" prefWidth="72.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.63053131103516" minWidth="10.0" prefWidth="74.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.95654296875" minWidth="10.0" prefWidth="75.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.5089569091797" minWidth="10.0" prefWidth="74.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.5089569091797" minWidth="5.0" prefWidth="56.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+        </GridPane>
+      <GridPane layoutX="255.0" layoutY="370.0" prefHeight="276.0" prefWidth="760.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.44842529296875" minWidth="10.0" prefWidth="79.68966674804688" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.82696533203125" minWidth="1.759552001953125" prefWidth="77.8277587890625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="280.09991455078125" minWidth="10.0" prefWidth="77.37936401367188" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.5125427246094" minWidth="10.0" prefWidth="80.37939453125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.78717041015625" minWidth="10.0" prefWidth="80.37939453125" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="628.0" minWidth="10.0" prefWidth="76.310302734375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.3744812011719" minWidth="0.0" prefWidth="77.86187744140625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.3744812011719" minWidth="10.0" prefWidth="77.72381591796875" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.3744812011719" minWidth="10.0" prefWidth="77.1722412109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="578.3744812011719" minWidth="10.0" prefWidth="59.8277587890625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="98.72381591796875" minHeight="10.0" prefHeight="70.96588134765625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="135.82696533203125" minHeight="10.0" prefHeight="69.6563720703125" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="111.44680786132812" minHeight="10.0" prefHeight="72.793701171875" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="8">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="9">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Item%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../build/resources/main/sprites/ui/inventory/Trash.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="iSlot1" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" />
+            <Button fx:id="iSlot2" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="1" />
+            <Button fx:id="iSlot3" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="2" />
+            <Button fx:id="iSlot4" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="3" />
+            <Button fx:id="iSlot5" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="4" />
+            <Button fx:id="iSlot6" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="5" />
+            <Button fx:id="iSlot7" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="6" />
+            <Button fx:id="iSlot8" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="7" />
+            <Button fx:id="iSlot9" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="8" />
+            <Button fx:id="iSlot10" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="9" />
+            <Button fx:id="iSlot11" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot12" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot13" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot14" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot15" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot16" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot17" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot18" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot19" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot20" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+            <Button fx:id="iSlot21" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot22" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot23" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot24" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot25" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot26" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot27" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot28" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Button fx:id="iSlot29" mnemonicParsing="false" onAction="#handle" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#trashFunction" opacity="0.0" prefHeight="48.0" prefWidth="52.0" text="WSlot1" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+            <ImageView fx:id="iSlot1Sprite" disable="true" fitHeight="54.0" fitWidth="54.0">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot2Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot3Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot4Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot5Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot6Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot7Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot8Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot9Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="8">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot10Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="9">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot11Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot12Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot13Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot14Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot15Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot16Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot17Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot18Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot19Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot20Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot21Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot22Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot24Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot25Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot26Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot27Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot28Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="iSlot29Sprite" disable="true" fitHeight="54.0" fitWidth="54.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../sprites/ui/inventory/Empty%20Slot.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView fx:id="displayImage" fitHeight="117.0" fitWidth="118.0" layoutX="670.0" layoutY="172.0">
+         <image>
+            <Image url="@../../../../build/resources/main/sprites/ui/inventory/Empty%20Slot.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerSprite" fitHeight="187.0" fitWidth="126.0" layoutX="665.0" layoutY="139.0">
+         <image>
+            <Image url="@../../../../build/resources/main/sprites/knight-wallslide.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="descTitle" layoutX="804.0" layoutY="130.0" text="Character Stats">
+         <font>
+            <Font name="Pixeled Regular" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="descLine1" layoutX="816.0" layoutY="166.0" text="Level: 1">
+         <font>
+            <Font name="Pixeled Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="descLine2" layoutX="816.0" layoutY="195.0" text="Mana: 100">
+         <font>
+            <Font name="Pixeled Regular" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="descLine3" layoutX="818.0" layoutY="226.0" text="Attack: 50">
+         <font>
+            <Font name="Pixeled Regular" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="917.0" layoutY="84.0">
+         <image>
+            <Image url="@../sprites/coin_static.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="playerMoney" layoutX="954.0" layoutY="83.0" text="0">
+         <font>
+            <Font name="Pixeled Regular" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="descLine4" layoutX="818.0" layoutY="259.0">
+         <font>
+            <Font name="Pixeled Regular" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="964.0" layoutY="283.0">
+         <image>
+            <Image url="@../sprites/ui/inventory/hammersawlt.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="descLine5" layoutX="819.0" layoutY="289.0">
+         <font>
+            <Font name="Pixeled Regular" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="965.0" layoutY="285.0" mnemonicParsing="false" onAction="#toggleCrafting" opacity="0.0" prefHeight="39.0" prefWidth="45.0" text="Crafting" />
+      <Button fx:id="confirmCrafting" layoutX="899.0" layoutY="292.0" mnemonicParsing="false" onAction="#completeCrafting" text="Craft" visible="false" />
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="486.0" layoutY="341.0">
+         <image>
+            <Image url="@../sprites/ui/inventory/booticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="416.0" layoutY="341.0">
+         <image>
+            <Image url="@../sprites/ui/inventory/panticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="341.0" layoutY="341.0">
+         <image>
+            <Image url="@../sprites/ui/inventory/chesticon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="268.0" layoutY="341.0">
+         <image>
+            <Image url="@../sprites/ui/inventory/helicon.png" />
+         </image>
+      </ImageView>
+    </children>
+
+</Pane>
