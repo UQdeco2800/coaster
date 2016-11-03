@@ -52,7 +52,7 @@ public class Particle extends Entity {
 		setPosition(posX, posY);
 		this.decayTicks = decayTicks;
 
-		setCollisionFilter(e -> e == null);
+		setCollisionFilter(e -> false);
 	}
 
 	@Override
