@@ -82,5 +82,8 @@ public enum GameAction {
 	CHANGE_MODE,
 
 	//ROOMS
-	ENTER_ROOM
+	ENTER_ROOM,
+	
+	// NPC gen
+	TOGGLE_NPC_GEN
 }

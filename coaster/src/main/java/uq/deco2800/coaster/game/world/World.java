@@ -1027,6 +1027,10 @@ public class World {
 	public boolean isNpcGenEnabled() {
 		return isNpcGenEnabled;
 	}
+	
+	public void toggleNpcGen() {
+		isNpcGenEnabled = !isNpcGenEnabled;
+	}
 
 	/**
 	 * Will set whether or not mob generation is enabled

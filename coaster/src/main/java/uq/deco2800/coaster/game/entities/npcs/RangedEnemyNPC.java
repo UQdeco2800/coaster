@@ -137,7 +137,9 @@ public class RangedEnemyNPC extends BaseNPC implements AttackableNPC {
 	protected void onDeath(Entity cause) {
 		super.onDeath();
 		if (isBoss) {
+			if (cause instanceof Player) {
 			((Player) cause).addBossKill("SPIDER BOSS");
+			}
 		}
 	}
 

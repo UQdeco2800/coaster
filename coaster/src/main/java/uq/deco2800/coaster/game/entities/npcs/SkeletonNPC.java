@@ -179,7 +179,9 @@ public class SkeletonNPC extends MeleeEnemyNPC implements AttackableNPC {
 	protected void onDeath(Entity cause) {
 		super.onDeath(cause);
 		if (isBoss) {
-			((Player) cause).addBossKill("SKELETON BOSS");
+			if (cause instanceof Player) {
+				((Player) cause).addBossKill("SKELETON BOSS");
+			}
 		}
 		ItemDrop.drop(ItemRegistry.getItem("bone"), this.getX(),  this.getY());
 		ItemDrop.drop(ItemRegistry.getItem("wood"), this.getX(),  this.getY());

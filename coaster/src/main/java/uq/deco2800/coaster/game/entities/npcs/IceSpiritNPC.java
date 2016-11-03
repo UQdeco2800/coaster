@@ -57,7 +57,9 @@ public class IceSpiritNPC extends FlyingNPC {
 	public void onDeath(Entity cause) {
 		super.onDeath(cause);
 		if (isBoss) {
-			((Player) cause).addBossKill("ICESPIRIT BOSS");
+			if (cause instanceof Player) {
+				((Player) cause).addBossKill("ICESPIRIT BOSS");
+			}
 		}
 	}
 }

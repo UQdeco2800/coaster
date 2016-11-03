@@ -100,6 +100,9 @@ public class ControlSchemeManager {
 
 		// Rooms
 		keymap.put(KeyCode.K, GameAction.ENTER_ROOM);
+		
+		// toggle NPC gen
+		keymap.put(KeyCode.B,  GameAction.TOGGLE_NPC_GEN);
 
 		if (controlScheme == ControlScheme.DEFAULT) {
 			// KobiMcKerihan (kobimac)

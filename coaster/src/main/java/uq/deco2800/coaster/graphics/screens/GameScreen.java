@@ -280,7 +280,7 @@ public class GameScreen extends Screen {
 		}
 
 		drawGradient(backgrounds.get(timePhase));
-		if (timePhase == TimeOfDay.NIGHT) {
+		if (timePhase == TimeOfDay.NIGHT || timePhase == TimeOfDay.PRE_DAWN) {
 			gc.drawImage(stars, 0, 0, viewport.getResWidth(), viewport.getResHeight());
 		}
 
@@ -288,7 +288,7 @@ public class GameScreen extends Screen {
 		gc.save();
 		gc.setGlobalAlpha(fraction);
 		drawGradient(backgrounds.get(timePhase.next()));
-		if (timePhase.next() == TimeOfDay.NIGHT) {
+		if (timePhase.next() == TimeOfDay.NIGHT || timePhase.next() == TimeOfDay.PRE_DAWN) {
 			gc.drawImage(stars, 0, 0, viewport.getResWidth(), viewport.getResHeight());
 
 		}
@@ -302,9 +302,9 @@ public class GameScreen extends Screen {
 
 		runSunAnimation();
 		runMoonAnimation();
-		runShipAnimation();
-		runOtherShipAnimation();
-		runPlanetAnimation();
+//		runShipAnimation();
+//		runOtherShipAnimation();
+//		runPlanetAnimation();
 	}
 
 

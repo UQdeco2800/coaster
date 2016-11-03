@@ -72,7 +72,9 @@ public class BatNPC extends FlyingNPC {
 		ItemDrop.drop(ItemRegistry.getItem("batwing"), this.getX(),  this.getY());
 		ItemDrop.drop(ItemRegistry.getItem("batteeth"), this.getX(),  this.getY());
 		if (isBoss) {
-			((Player) cause).addBossKill("BAT BOSS");
+			if (cause instanceof Player) {
+				((Player) cause).addBossKill("BAT BOSS");
+			}
 		}
 	}
 }

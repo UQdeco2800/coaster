@@ -193,6 +193,10 @@ public class Engine extends AnimationTimer {
 			renderer.toggleScreen(inventoryScreenId);
 			((InventoryController) FXMLControllerRegister.get(InventoryController.class)).updateSprites();
 		}
+		
+		if (InputManager.justPressed(GameAction.TOGGLE_NPC_GEN)) {
+			world.toggleNpcGen();
+		}
 
 		// Store Button only works when standing next to store NPC
 		String storeScreenId = "Store";

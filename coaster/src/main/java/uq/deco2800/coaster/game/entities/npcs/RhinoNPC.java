@@ -93,7 +93,9 @@ public class RhinoNPC extends BaseNPC implements AttackableNPC {
 	protected void onDeath(Entity cause) {
 		super.onDeath();
 		if (isBoss) {
-			((Player) cause).addBossKill("RHINO BOSS");
+			if (cause instanceof Player) {
+				((Player) cause).addBossKill("RHINO BOSS");
+			}
 		}
 		ItemDrop.drop(ItemRegistry.getItem("horn"), this.getX(),  this.getY());
 		ItemDrop.drop(ItemRegistry.getItem("blooddrop"), this.getX(),  this.getY());

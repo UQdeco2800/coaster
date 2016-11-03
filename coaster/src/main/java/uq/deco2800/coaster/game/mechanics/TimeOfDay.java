@@ -19,7 +19,7 @@ public enum TimeOfDay {
 	PRE_DAWN;
 	
 	// time 0 is 6am;
-	public final static long DAY_LENGTH = 600_000L;
+	public final static long DAY_LENGTH = 180_000L;
 	public final static long HOUR_LENGTH = DAY_LENGTH / 24;
 	
 	public final static long SUN_RISE = HOUR_LENGTH * 4;

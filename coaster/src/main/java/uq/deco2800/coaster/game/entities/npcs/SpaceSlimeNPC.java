@@ -62,7 +62,9 @@ public class SpaceSlimeNPC extends MeleeEnemyNPC{
 			super.onDeath(cause);
 		}
 		if (isBoss) {
-			((Player) cause).addBossKill("SPACESLIME BOSS");
+			if (cause instanceof Player) {
+				((Player) cause).addBossKill("SPACESLIME BOSS");
+			}
 		}
 		ItemDrop.drop(ItemRegistry.getItem("slimesoul"), this.getX(),  this.getY());
 		ItemDrop.drop(ItemRegistry.getItem("slime"), this.getX(),  this.getY());

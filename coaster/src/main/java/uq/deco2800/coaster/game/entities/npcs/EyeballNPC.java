@@ -64,7 +64,9 @@ public class EyeballNPC extends FlyingNPC {
 	public void onDeath(Entity cause) {
 		super.onDeath(cause);
 		if (isBoss) {
-			((Player) cause).addBossKill("EYEBALL BOSS");
+			if (cause instanceof Player) {
+				((Player) cause).addBossKill("EYEBALL BOSS");
+			}
 		}
 		ItemDrop.drop(ItemRegistry.getItem("tears"), this.getX(),  this.getY());
 		ItemDrop.drop(ItemRegistry.getItem("glass"), this.getX(),  this.getY());

@@ -46,13 +46,13 @@ public class Inventory {
 		// ADD ITEMS HERE for the active inventory
 		this.activeInventory[0] = new InventoryPair(1, ItemRegistry.getItem("Gun1"));
 		this.activeInventory[1] = new InventoryPair(1,  ItemRegistry.getItem("Melee1"));
-		this.activeInventory[2] = new InventoryPair(1,  ItemRegistry.getItem("Gun2"));
-		this.activeInventory[3] = new InventoryPair(1,  ItemRegistry.getItem("Gun3"));
-		this.activeInventory[4] = new InventoryPair(1,  ItemRegistry.getItem("Gun4"));
-		this.activeInventory[5] = new InventoryPair(1,  ItemRegistry.getItem("Gun5"));
-		this.activeInventory[6] = new InventoryPair(1,  ItemRegistry.getItem("Gun6"));
-		this.activeInventory[7] = new InventoryPair(1,  ItemRegistry.getItem("Gun7"));
-		this.activeInventory[8] = new InventoryPair(1,  ItemRegistry.getItem("Gun8"));
+//		this.activeInventory[2] = new InventoryPair(1,  ItemRegistry.getItem("Gun2"));
+//		this.activeInventory[3] = new InventoryPair(1,  ItemRegistry.getItem("Gun3"));
+//		this.activeInventory[4] = new InventoryPair(1,  ItemRegistry.getItem("Gun4"));
+//		this.activeInventory[5] = new InventoryPair(1,  ItemRegistry.getItem("Gun5"));
+//		this.activeInventory[6] = new InventoryPair(1,  ItemRegistry.getItem("Gun6"));
+//		this.activeInventory[7] = new InventoryPair(1,  ItemRegistry.getItem("Gun7"));
+//		this.activeInventory[8] = new InventoryPair(1,  ItemRegistry.getItem("Gun8"));
 
 		// Filling up the passive inventory
 		for (int i = 0; i < passiveInventory.length; i++) {
