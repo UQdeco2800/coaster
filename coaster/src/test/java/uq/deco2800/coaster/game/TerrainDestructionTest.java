@@ -62,8 +62,7 @@ public class TerrainDestructionTest {
 		Tile tile = world.getTiles().get(tileX, tileY);
 		tile.setHitPoints(3);
 		TerrainDestruction.damageBlock(tileX, tileY, 0, false, true);
-		assertEquals("Ensure tile has switched to damaged variant", tile.getTileType().getType(), Tiles.DIRT_DAMAGED);
-
+		assertEquals("Ensure tile has switched to damaged variant", tile.getTileType().getType(), Tiles.DIRT);
 	}
 
 	@Test
