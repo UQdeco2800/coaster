@@ -2,6 +2,10 @@
 
 [![Build Status](http://deco2800.uqcloud.net/jenkins/buildStatus/icon?job=deco2800-2016-coaster)](http://deco2800.uqcloud.net/jenkins/job/deco2800-2016-coaster/)
 
+## Best Open Source Project - 2016 Innovation Showcase
+Coaster received the Paul Gampe Prize for "Best Open Source Project" in the 2016 UQ Innovation Showcase.
+<img src="award.jpg" width="50%" alt="Paul Gampe rize for best open source project"/>
+
 
 ## Description 
 Side scrolling game where the player must fight off a hoard of ducks. 
@@ -61,13 +65,3 @@ Side scrolling game where the player must fight off a hoard of ducks.
      \  | Debug Console
 
 *Sound is currently muted by default. Press M to unmute*
-
-## Game Play
-
-### Difficult Settings
-
-### Scoring 
-#### Skill Tree 
-
-
-
