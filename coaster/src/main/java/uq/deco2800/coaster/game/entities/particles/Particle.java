@@ -6,6 +6,7 @@ import uq.deco2800.coaster.game.entities.AABB;
 import uq.deco2800.coaster.game.entities.Entity;
 import uq.deco2800.coaster.game.mechanics.BodyPart;
 import uq.deco2800.coaster.game.mechanics.Side;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.sprites.Sprite;
 import uq.deco2800.coaster.graphics.sprites.SpriteList;
 
@@ -19,6 +20,7 @@ public class Particle extends Entity {
 
 	public Particle(float velX, float velY, float posX, float posY, int particleID, int decayTicks,
 					boolean gravity, boolean deletable) {
+		layer = LayerList.PARTICLES; 
 		bounds = new AABB(posX, posY, size, size);
 		enableGravity = gravity;
 		this.deletable = deletable;

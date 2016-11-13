@@ -8,6 +8,7 @@ import uq.deco2800.coaster.core.sound.SoundCache;
 import uq.deco2800.coaster.game.entities.npcs.BaseNPC;
 import uq.deco2800.coaster.game.entities.npcs.companions.CompanionNPC;
 import uq.deco2800.coaster.game.mechanics.BodyPart;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.singularity.common.representations.coaster.state.*;
 
 import java.util.List;

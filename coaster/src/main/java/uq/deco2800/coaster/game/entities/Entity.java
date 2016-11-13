@@ -14,6 +14,7 @@ import uq.deco2800.coaster.game.tiles.Tile;
 import uq.deco2800.coaster.game.tiles.TileInfo;
 import uq.deco2800.coaster.game.world.Chunk;
 import uq.deco2800.coaster.game.world.World;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.Viewport;
 import uq.deco2800.coaster.graphics.sprites.Sprite;
 import uq.deco2800.coaster.graphics.sprites.SpriteList;
@@ -44,6 +45,8 @@ public abstract class Entity {
 	protected boolean strafeActive = false;
 
 	protected int renderFacing = 1;
+
+	protected LayerList layer;
 
 	// For now, coordinate system is top-left just so we don't have to flip it
 	// when rendering. If this turns out
@@ -80,6 +83,7 @@ public abstract class Entity {
 	private List<AABB> checkedTiles = new LinkedList<AABB>();
 
 	public Entity() {
+		layer = LayerList.DEFAULT;
 		this.world = World.getInstance();
 		setCollisionFilter(e -> true);
 	}
@@ -112,6 +116,20 @@ public abstract class Entity {
 	 */
 	public Sprite getSprite() {
 		return this.sprite;
+	}
+	
+	/**
+	 * Set rendering layer
+	 */
+	public void setLayer(LayerList layer) {
+		this.layer = layer;
+	}
+	
+	/**
+	 * Return rendering layer
+	 */
+	public LayerList getLayer() {
+		return layer;
 	}
 
 	/**

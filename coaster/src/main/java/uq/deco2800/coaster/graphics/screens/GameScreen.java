@@ -25,6 +25,7 @@ import uq.deco2800.coaster.game.mechanics.TimeOfDay;
 import uq.deco2800.coaster.game.tiles.Tiles;
 import uq.deco2800.coaster.game.weather.Lightning;
 import uq.deco2800.coaster.game.world.*;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.Viewport;
 import uq.deco2800.coaster.graphics.notifications.IngameText;
 import uq.deco2800.coaster.graphics.sprites.Sprite;
@@ -699,34 +700,44 @@ public class GameScreen extends Screen {
 		float right = viewport.getRight();
 		float top = viewport.getTop();
 		float bottom = viewport.getBottom();
-		Player player = null;
+		Map<LayerList, List<Entity>> layers = new HashMap<>();
+		for (LayerList layer: LayerList.values()) {
+			layers.put(layer, new ArrayList<>());
+		}
 		for (Entity entity : entities) {
-			if (entity instanceof Player) {
-				player = (Player) entity;
-			} else {
-				if (entity.getX() + entity.getWidth() > left && entity.getX() < right
-						&& entity.getY() + entity.getHeight() > top && entity.getY() < bottom) {
-					entity.render(gc, viewport, ms);
+			if (entity.getX() + entity.getWidth() > left && entity.getX() < right
+					&& entity.getY() + entity.getHeight() > top && entity.getY() < bottom) {
+				if (entity.getLayer() == null) {
+					System.exit(0);
 				}
+				layers.get(entity.getLayer()).add(entity);
 			}
 		}
-		if (player != null) { //Render player in front of all entities
-			renderHud(player);
-			player.render(gc, viewport, ms);
-			renderSelectedWeapon(player);
-			if (player.getOnMountStatus()) {
-				player.getMount().render(gc, viewport, ms);
-				;
-			}
-			if (player.getSkillSwap()) {
-				player.setUpdateHud(true);
-				player.setSpellKey(player.getSpellKey2());
-				player.setDrawSKill(player.getDrawSkill2());
-				;
-				player.setSpellKey2("");
-				player.setSkillSwap(false);
-				player.setDrawSKill2(null);
+		
+		for (LayerList layer: LayerList.values()) {
+			List<Entity> layerEntities = layers.get(layer);
+			for (Entity entity: layerEntities) {
+				entity.render(gc, viewport, ms);
+				if (entity instanceof Player) {
+					Player player = (Player) entity;
+					renderHud(player);
+					player.render(gc, viewport, ms);
+					renderSelectedWeapon(player);
+					if (player.getOnMountStatus()) {
+						player.getMount().render(gc, viewport, ms);
+						;
+					}
+					if (player.getSkillSwap()) {
+						player.setUpdateHud(true);
+						player.setSpellKey(player.getSpellKey2());
+						player.setDrawSKill(player.getDrawSkill2());
+						;
+						player.setSpellKey2("");
+						player.setSkillSwap(false);
+						player.setDrawSKill2(null);
 
+					}
+				}
 			}
 		}
 	}

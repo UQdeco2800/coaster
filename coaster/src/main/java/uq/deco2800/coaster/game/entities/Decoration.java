@@ -6,11 +6,13 @@ import uq.deco2800.coaster.game.mechanics.BodyPart;
 import uq.deco2800.coaster.game.mechanics.Side;
 import uq.deco2800.coaster.game.tiles.TileInfo;
 import uq.deco2800.coaster.game.world.World;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.sprites.Sprite;
 
 public class Decoration extends Entity {
 
 	public Decoration(Sprite sprite) {
+		layer = LayerList.DECORATIONS;
 		setSprite(sprite);
 		setBlocksOtherEntities(false);
 
