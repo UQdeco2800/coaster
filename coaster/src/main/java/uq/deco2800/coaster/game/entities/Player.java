@@ -32,6 +32,7 @@ import uq.deco2800.coaster.game.world.Chunk;
 import uq.deco2800.coaster.game.world.MiniMap;
 import uq.deco2800.coaster.game.world.RoomWorld;
 import uq.deco2800.coaster.game.world.World;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.Viewport;
 import uq.deco2800.coaster.graphics.Window;
 import uq.deco2800.coaster.graphics.notifications.IngameText;
@@ -222,6 +223,7 @@ public class Player extends BasicMovingEntity {
 	 * The Player class is the entity controlled by the user.
 	 */
 	public Player() {
+		layer = LayerList.PLAYERS;
 		setCollisionFilter(e -> this.knockBackTimer < 0);
 
 		sprites.put(EntityState.STANDING, new Sprite(SpriteList.KNIGHT_STANDING));

@@ -18,6 +18,7 @@ import uq.deco2800.coaster.game.mechanics.BodyPart;
 import uq.deco2800.coaster.game.mechanics.Side;
 import uq.deco2800.coaster.game.tiles.TileInfo;
 import uq.deco2800.coaster.graphics.notifications.IngameText;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.Viewport;
 
 /**
@@ -61,6 +62,7 @@ public abstract class BaseNPC extends StateEntity {
 	protected int stateDuration;
 	protected NPCSound soundType;
 	Player target;
+
 	/* Future potential fields to implement */
 	// Weapon currentWeapon; //Change to list of weapons if npc can equip or
 	// hold multiple
@@ -70,7 +72,7 @@ public abstract class BaseNPC extends StateEntity {
 	 * Constructor for BaseNPC
 	 */
 	public BaseNPC() {
-
+		layer = LayerList.NPCS;
 	}
 
 	@Override

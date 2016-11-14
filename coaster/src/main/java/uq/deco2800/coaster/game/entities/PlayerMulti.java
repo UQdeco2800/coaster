@@ -11,6 +11,7 @@ import uq.deco2800.coaster.game.entities.particles.Particle;
 import uq.deco2800.coaster.game.items.ItemRegistry;
 import uq.deco2800.coaster.game.items.Weapon;
 import uq.deco2800.coaster.game.mechanics.BodyPart;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.Viewport;
 import uq.deco2800.coaster.graphics.Window;
 import uq.deco2800.coaster.graphics.sprites.AngledSpriteRelation;

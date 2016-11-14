@@ -8,6 +8,7 @@ import uq.deco2800.coaster.game.items.Item;
 import uq.deco2800.coaster.game.mechanics.BodyPart;
 import uq.deco2800.coaster.game.mechanics.Side;
 import uq.deco2800.coaster.game.world.World;
+import uq.deco2800.coaster.graphics.LayerList;
 import uq.deco2800.coaster.graphics.notifications.Toaster;
 
 /**
@@ -50,6 +51,7 @@ public class ItemEntity extends Entity {
 	}
 
 	public ItemEntity(Item item, float width, float height) {
+		layer = LayerList.ITEMS;
 		setSprite(item.getSprite());
 		this.item = item;
 		bounds = new AABB(posX, posY, width, height);
