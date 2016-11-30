@@ -7,13 +7,15 @@ Coaster received the Paul Gampe Prize for "Best Open Source Project" in the 2016
 <img src="award.jpg" width="50%" alt="Paul Gampe rize for best open source project"/>
 
 
-## Description 
-Side scrolling game where the player must fight off a hoard of ducks. 
+## Description
+A 2D sci-fi adventure game. Created by the 2016 [members](CREDITS) of DECO2800 workshop #4
+![Main menu screenshot](menu.png)
+To play, execute `./gradlew build run`
 
 ## Game Controls
 ## Movement
 *Button* | *Action*
- ----- | ----- 
+ ----- | -----
      A | Move Left
      D | Move Right
      S | Move Down
@@ -47,7 +49,7 @@ Side scrolling game where the player must fight off a hoard of ducks.
 =======
 ## Misc
  *Button* | *Action*
- ----- | ----- 
+ ----- | -----
      K | Save
      L | Load
    ESC | Quit
