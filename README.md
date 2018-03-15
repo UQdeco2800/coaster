@@ -44,7 +44,6 @@ Ctrl | Slide
 6 | Switch to active Weapon 6
 7 | Switch to active Weapon 7
 
-=======
 ## Misc
 *Button* | *Action*
 -------- | --------
